@@ -1,0 +1,6 @@
+<script setup>
+import { nextTick,onBeforeUnmount,onMounted,ref,watch } from 'vue';import * as echarts from 'echarts'
+const props=defineProps({title:String,rows:{type:Array,default:()=>[]},metric:String});const el=ref();let chart
+function draw(){if(!el.value)return;chart||=echarts.init(el.value);const data=props.rows.slice(-7);chart.setOption({animation:false,title:{text:props.title,left:8,top:7,textStyle:{color:'#14213a',fontSize:11,fontWeight:700}},grid:{left:42,right:12,top:40,bottom:28},tooltip:{trigger:'axis'},xAxis:{type:'category',data:data.map(r=>r.time.slice(5,10)),axisLabel:{fontSize:8,color:'#52647a'},axisLine:{lineStyle:{color:'#d8e1ea'}}},yAxis:{type:'value',scale:true,axisLabel:{fontSize:8,color:'#52647a'},splitLine:{lineStyle:{color:'#edf1f5'}}},series:[{type:'line',smooth:true,symbolSize:5,data:data.map(r=>r[props.metric]),lineStyle:{color:'#156ff0',width:2},itemStyle:{color:'#156ff0'},areaStyle:{color:'rgba(21,111,240,.05)'}}]},true)}
+watch(()=>[props.rows,props.metric],()=>nextTick(draw),{deep:true});onMounted(()=>{draw();addEventListener('resize',draw)});onBeforeUnmount(()=>{removeEventListener('resize',draw);chart?.dispose()})
+</script><template><div ref="el" class="mini"></div></template><style scoped>.mini{height:205px;background:#fff;border:1px solid #e0e7ef;border-radius:8px}</style>

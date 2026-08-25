@@ -1,0 +1,62 @@
+work_date,eqpid,chid,title
+2026-08-02 06:00,EQ01,A,Chamber PM
+2026-08-07 09:00,EQ01,A,Electrode Replacement
+2026-08-03 08:00,EQ01,B,Chamber Cleaning
+2026-08-04 08:00,EQ01,C,Gas Line Inspection
+2026-08-02 09:00,EQ02,A,Preventive Maintenance
+2026-08-03 09:00,EQ02,B,Electrode Replacement
+2026-08-04 09:00,EQ02,C,Chamber Cleaning
+2026-08-02 10:00,EQ03,A,Chamber PM
+2026-08-03 10:00,EQ03,B,Gas Line Inspection
+2026-08-04 10:00,EQ03,C,Sensor Calibration
+2026-08-02 11:00,EQ04,A,Preventive Maintenance
+2026-08-03 11:00,EQ04,B,Chamber Cleaning
+2026-08-04 11:00,EQ04,C,Electrode Replacement
+2026-08-02 12:00,EQ05,A,Chamber PM
+2026-08-03 12:00,EQ05,B,Sensor Calibration
+2026-08-04 12:00,EQ05,C,Gas Line Inspection
+2026-08-03 06:00,EQ06,A,Chamber Cleaning
+2026-08-04 06:00,EQ06,B,Preventive Maintenance
+2026-08-05 06:00,EQ06,C,Electrode Replacement
+2026-08-03 07:00,EQ07,A,Sensor Calibration
+2026-08-04 07:00,EQ07,B,Chamber PM
+2026-08-05 07:00,EQ07,C,Gas Line Inspection
+2026-08-03 08:00,EQ08,A,Preventive Maintenance
+2026-08-04 08:00,EQ08,B,Electrode Replacement
+2026-08-05 08:00,EQ08,C,Chamber Cleaning
+2026-08-03 09:00,EQ09,A,Chamber PM
+2026-08-04 09:00,EQ09,B,Gas Line Inspection
+2026-08-05 09:00,EQ09,C,Sensor Calibration
+2026-08-03 10:00,EQ10,A,Preventive Maintenance
+2026-08-04 10:00,EQ10,B,Chamber Cleaning
+2026-08-05 10:00,EQ10,C,Electrode Replacement
+2026-08-04 06:00,EQ11,A,Chamber PM
+2026-08-05 06:00,EQ11,B,Sensor Calibration
+2026-08-06 06:00,EQ11,C,Gas Line Inspection
+2026-08-04 07:00,EQ12,A,Chamber Cleaning
+2026-08-05 07:00,EQ12,B,Preventive Maintenance
+2026-08-06 07:00,EQ12,C,Electrode Replacement
+2026-08-04 08:00,EQ13,A,Sensor Calibration
+2026-08-05 08:00,EQ13,B,Chamber PM
+2026-08-06 08:00,EQ13,C,Gas Line Inspection
+2026-08-04 09:00,EQ14,A,Preventive Maintenance
+2026-08-05 09:00,EQ14,B,Electrode Replacement
+2026-08-06 09:00,EQ14,C,Chamber Cleaning
+2026-08-04 10:00,EQ15,A,Chamber PM
+2026-08-05 10:00,EQ15,B,Gas Line Inspection
+2026-08-06 10:00,EQ15,C,Sensor Calibration
+2026-08-05 06:00,EQ16,A,Preventive Maintenance
+2026-08-06 06:00,EQ16,B,Chamber Cleaning
+2026-08-07 06:00,EQ16,C,Electrode Replacement
+2026-08-05 07:00,EQ17,A,Chamber PM
+2026-08-06 07:00,EQ17,B,Sensor Calibration
+2026-08-07 07:00,EQ17,C,Gas Line Inspection
+2026-08-05 08:00,EQ18,A,Chamber Cleaning
+2026-08-06 08:00,EQ18,B,Preventive Maintenance
+2026-08-07 08:00,EQ18,C,Electrode Replacement
+2026-08-05 09:00,EQ19,A,Sensor Calibration
+2026-08-06 09:00,EQ19,B,Chamber PM
+2026-08-07 09:00,EQ19,C,Gas Line Inspection
+2026-08-05 10:00,EQ20,A,Preventive Maintenance
+2026-08-06 10:00,EQ20,B,Electrode Replacement
+2026-08-07 10:00,EQ20,C,Chamber Cleaning

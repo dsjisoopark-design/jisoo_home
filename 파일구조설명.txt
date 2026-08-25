@@ -1,0 +1,83 @@
+NPW Dashboard 전달 및 실행 안내
+================================
+
+1. 프로젝트 개요
+----------------
+이 프로젝트는 Vue 3, Vite, Pinia, Vue Router, ECharts 및 ECharts GL 기반의
+NPW 분석 대시보드입니다. public 폴더의 CSV 파일을 화면 데이터로 사용합니다.
+
+
+2. 전달 파일 구조
+-----------------
+npw-dashboard/
+├─ public/
+│  ├─ npw_dummy.csv          NPW 및 Wafer Map 원본 데이터
+│  ├─ maint.csv              정비 이력 데이터
+│  └─ favicon.ico
+│
+├─ src/
+│  ├─ assets/                공통 CSS와 이미지
+│  ├─ components/            공통 대시보드 컴포넌트
+│  │  ├─ improvement/        Before/After 개선효과 컴포넌트
+│  │  └─ wafer/              2D/3D Wafer Map 및 Trend 컴포넌트
+│  ├─ composables/           Wafer 계산, 보간, 컬러 및 3D 동기화 로직
+│  ├─ router/index.js        화면 경로 설정
+│  ├─ stores/                Pinia 데이터와 Spec 설정
+│  ├─ utils/                 차트 색상, 선택 연동 및 계산 유틸리티
+│  ├─ views/                 페이지 단위 Vue 컴포넌트
+│  ├─ App.vue                최상위 앱 컴포넌트
+│  └─ main.js                Vue 앱 시작 파일
+│
+├─ index.html                Vite HTML 진입점
+├─ package.json              라이브러리와 실행 명령
+├─ package-lock.json         동일한 버전 설치를 위한 잠금 파일
+├─ vite.config.js            Vite 설정
+├─ jsconfig.json             JavaScript 경로 설정
+├─ eslint.config.js          ESLint 설정
+├─ .prettierrc.json          코드 포맷 설정
+├─ .oxlintrc.json            Oxlint 설정
+├─ .editorconfig             편집기 공통 설정
+├─ .gitignore                Git 제외 설정
+├─ README.md
+└─ 파일구조설명.txt          본 문서
+
+
+3. ZIP에서 제외된 항목
+----------------------
+node_modules/                 npm ci 실행 시 다시 생성됨
+dist/                         npm run build 실행 시 다시 생성됨
+.codex-tmp/                   작업 임시 폴더
+.vscode/                      개인 VS Code 설정
+
+
+4. 다른 컴퓨터에서 실행
+-----------------------
+필요 환경: Node.js 22.18 이상 또는 24.12 이상
+
+1) ZIP 파일의 압축을 해제합니다.
+2) VS Code에서 npw-dashboard 폴더를 엽니다.
+3) VS Code 터미널에서 아래 명령을 실행합니다.
+
+   npm ci
+   npm run dev
+
+4) 터미널에 표시된 주소를 브라우저에서 엽니다.
+   기본 주소: http://localhost:5173
+
+
+5. 배포용 파일 생성
+-------------------
+npm run build
+
+명령이 완료되면 dist 폴더가 생성됩니다.
+
+
+6. 주요 라이브러리
+------------------
+Vue, Vue Router, Pinia, Axios, ECharts, ECharts GL, Vite
+
+
+7. 데이터 교체 시 주의사항
+-------------------------
+public/npw_dummy.csv와 public/maint.csv의 파일명 및 기존 컬럼 구조를 유지한 채
+데이터를 교체해야 대시보드가 정상적으로 읽을 수 있습니다.

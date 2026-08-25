@@ -1,0 +1,3 @@
+<script setup>defineProps({min:Number,max:Number,colors:Array});const fmt=v=>Number(v||0).toLocaleString('en-US',{maximumFractionDigits:0})</script>
+<template><div class="scale"><b>Thickness (Å)</b><div class="bar" :style="{background:`linear-gradient(90deg,${colors.join(',')})`}"></div><div class="ticks"><span>{{fmt(min)}}</span><span>{{fmt(min+(max-min)*.5)}}</span><span>{{fmt(max)}}</span></div></div></template>
+<style scoped>.scale{display:grid;grid-template-columns:62px 145px;align-items:center;width:207px;background:transparent}.scale>b{color:#26344c;font-size:8px;font-weight:700}.bar{height:7px;border-radius:2px}.ticks{grid-column:2;display:flex;justify-content:space-between;margin-top:2px;color:#647287;font-size:7px}</style>
